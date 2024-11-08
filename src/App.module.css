@@ -1,0 +1,32 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* aplicando responsividade - mudando config se o width 
+do dispositivo do usuario for menor que 768px */
+@media (max-width: 768px) {
+    
+    /* font-size com o resultado do calculo */
+    html {
+        font-size: 87.5%;
+    }
+    
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* definindo font-size do mobile  */
+
+/* 16 - 100%(1 rem)
+14 -> x
+
+calculo = 14 * 100 / 16 = 87.5 */
+
